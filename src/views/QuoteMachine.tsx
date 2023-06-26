@@ -3,11 +3,11 @@ import { fetchRandomQuote } from "../service/api";
 import './style.css';
 
 export const QuoteMachine = () => {
-    const [quote, setQuote] = useState('');
-    const [author, setAuthor] = useState('');
-    const [isLoading, setIsLoading] = useState(true);
+    const [quote, setQuote] = useState<string>('');
+    const [author, setAuthor] = useState<string>('');
+    const [isLoading, setIsLoading] = useState<boolean>(true);
 
-    const fetchQuote = async (): Promise<any> => {
+    const fetchQuote = async (): Promise<void> => {
         try {
             const data = await fetchRandomQuote();
             setQuote(data.content);
