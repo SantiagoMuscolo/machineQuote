@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  place-items: center;
+  height: 90vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: radial-gradient(circle at 102.83% 45.38%, #ff8eef 0, #fd7feb 16.67%, #e16ce3 33.33%, #be55d8 50%, #9840cd 66.67%, #7333c6 83.33%, #482ec2 100%);
+}
